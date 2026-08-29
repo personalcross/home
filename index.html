@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.gstatic.com/firebasejs/12.18.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.18.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore-compat.js"></script>
+
+    <title>Home | Estúdio Personal Cross</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="shortcut icon" href="https://personalcross.github.io/assets/favicon/favicon.png">
+    <link rel="stylesheet" href="https://personalcross.github.io/assets/variables.css">
+    <link rel="stylesheet" href="https://personalcross.github.io/assets/global-style.css">
+    <link rel="stylesheet" href="https://personalcross.github.io/assets/responsive.css">
+    <link rel="stylesheet" href="https://personalcross.github.io/assets/components/custom-header.css">
+    <link rel="stylesheet" href="https://personalcross.github.io/assets/components/custom-nav.css">
+    <link rel="stylesheet" href="https://personalcross.github.io/assets/components/hamburguer.css">
+    <link rel="stylesheet" href="https://personalcross.github.io/assets/components/settings.css">
+    <link rel="stylesheet" href="https://personalcross.github.io/assets/components/video-container.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <header class="custom-header">
+        <nav class="custom-nav">
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <span class="custom-nav-links">Home</span>
+            <span class="custom-nav-links">Check-in</span>
+            <span class="custom-nav-links">Modalidades</span>
+            <img class="settings-icon" src="https://personalcross.github.io/assets/store/settings.png" alt="settings"
+                width="10%">
+        </nav>
+    </header>
+
+    <main>
+        <!-- Settings Sidebar -->
+        <aside class="settings-sidebar">
+            <button class="close-settings">X</button>
+            <div class="settings-options">
+                <button id="btn-login" class="guest-only">Entrar</button>
+                <button id="btn-signup" class="guest-only">Registrar</button>
+                <button id="btn-gym" class="admin-only">Academia</button>
+                <button id="btn-customers" class="admin-only">Clientes</button>
+                <button id="btn-workouts" class="admin-only">Treinos</button>
+                <button id="btn-logout" class="logged-only">Sair</button>
+            </div>
+        </aside>
+
+        <!-- Official video -->
+        <section class="institutional-section">
+            <h2 class="section-title">Nosso Espaço</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/MMRktoOokEs?autoplay=1&mute=1" 
+                    title="Estúdio Personal Cross"
+                    allow="autoplay; encrypted-media; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section class="location-section">
+
+            <h2 class="section-title">
+                Localização
+            </h2>
+
+            <div class="location-content">
+
+                <div class="location-info">
+
+                    <h3>
+                        Estúdio Personal Cross
+                    </h3>
+                    <p>
+                        Rua Emídio Navarro, n.º 48
+                    </p>
+                    <p>
+                        5300-210 Bragança
+                    </p>
+                    <p>
+                        Edifício José Matos
+                    </p>
+
+                </div>
+
+                <div class="location-image">
+                    <a href="https://maps.app.goo.gl/Y79SCzMaSkzsEQMZ6" target="_blank" rel="noopener noreferrer">
+                        <img src="location.png" alt="location">
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="highlight">
+
+            <a href="https://personalcross.github.io/sobre/">
+                Sobre
+            </a>
+
+            <a href="https://personalcross.github.io/nosso-time/">
+                Nosso Time
+            </a>
+
+            <a href="https://personalcross.github.io/perguntas-frequentes/">
+                Perguntas Frequentes
+            </a>
+
+            <a href="https://www.instagram.com/ep.cross?igsi=NGg0cnl1aTFvYTFr" target="_blank"
+                rel="noopener noreferrer">
+                Instagram
+            </a>
+
+        </div>
+    </main>
+    <footer>
+        © 2026 Estúdio Personal Cross · Todos os direitos reservados
+    </footer>
+
+    <script src="cs.js"></script>
+    <script src="config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="sidebarui.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+
+</html>

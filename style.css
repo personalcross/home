@@ -15,6 +15,7 @@
 .location-info h3 {
     color: var(--green);
     margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .location-image {
